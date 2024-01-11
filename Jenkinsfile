@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('BuildTest') {
             steps {
-            git 'https://github.com/shivamrnc/NewTestJenkinsFile.git'
+            git 'https://github.com/shivamrnc/Hello.git'
                 echo 'Building..'
             }
         }
