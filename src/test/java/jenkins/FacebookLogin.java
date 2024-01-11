@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -22,8 +23,9 @@ public class FacebookLogin {
 		
 		String projectPath = System.getProperty("user.dir");
 //		System.out.println("Project path is : "+projectPath);
+		//ChromeOptions options = new Chrome
 		
-		System.setProperty("webdriver.chrome.driver", projectPath+"/drivers/chromedriver.exe");
+		System.setProperty("webdriver.gecko.driver", projectPath+"/drivers/geckodriver.exe");
 	}
 
 		
@@ -31,7 +33,7 @@ public class FacebookLogin {
 	//System.setProperty("webdriver.chrome.driver", "C:\\Users\\shivamchoubey\\eclipse-workspace\\Jenkins\\drivers\\chromedriver.exe");
 @Test
 	public void loginpage() {
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver =  new FirefoxDriver();;
 		Facebook= new FacebookLoginPage(driver);
 		
 		driver.navigate().to("https://www.google.com/search?q=facebook&rlz=1C1UEAD_enIN1065IN1066&oq=face&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMhMIARAuGIMBGMcBGLEDGNEDGIAEMgkIAhBFGDkYgAQyDQgDEAAYgwEYsQMYgAQyDQgEEAAYgwEYsQMYgAQyDQgFEAAYgwEYsQMYgAQyDQgGEAAYgwEYsQMYgAQyDQgHEAAYgwEYsQMYgAQyCggIEAAYsQMYgAQyBwgJEAAYjwLSAQkyODQxajBqMTWoAgCwAgA&sourceid=chrome&ie=UTF-8");

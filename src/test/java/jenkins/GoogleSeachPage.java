@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -27,12 +28,12 @@ public class GoogleSeachPage {
 		String projectPath = System.getProperty("user.dir");
 //		System.out.println("Project path is : "+projectPath);
 		
-		System.setProperty("webdriver.chrome.driver", projectPath+"/drivers/chromedriver.exe");
+		System.setProperty("webdriver.gecko.driver", projectPath+"/drivers/geckodriver.exe");
 	}
 		
 @Test
 	public void GoogleTest() {	
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new FirefoxDriver();
 		
 		Google = new GoogleSearchPage(driver);
 		driver.navigate().to("https://google.com");
