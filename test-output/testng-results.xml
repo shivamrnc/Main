@@ -1,25 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-11T08:26:37Z" name="Default suite" finished-at="2024-01-11T08:26:42Z" duration-ms="5359">
+  <suite started-at="2024-01-11T10:25:53Z" name="Suite" finished-at="2024-01-11T10:26:17Z" duration-ms="23565">
     <groups>
     </groups>
-    <test started-at="2024-01-11T08:26:37Z" name="Default test" finished-at="2024-01-11T08:26:42Z" duration-ms="5359">
+    <test started-at="2024-01-11T10:25:53Z" name="Test" finished-at="2024-01-11T10:26:17Z" duration-ms="23565">
+      <class name="jenkins.login">
+        <test-method signature="enter()[pri:0, instance:jenkins.login@7a35b0f5]" started-at="2024-01-11T10:25:53Z" name="enter" finished-at="2024-01-11T10:26:04Z" duration-ms="11182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enter -->
+      </class> <!-- jenkins.login -->
+      <class name="jenkins.GoogleSeachPage">
+        <test-method signature="GoogleTest()[pri:0, instance:jenkins.GoogleSeachPage@5e2c3d18]" started-at="2024-01-11T10:26:04Z" name="GoogleTest" finished-at="2024-01-11T10:26:10Z" duration-ms="5821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleTest -->
+      </class> <!-- jenkins.GoogleSeachPage -->
       <class name="jenkins.FacebookLogin">
-        <test-method is-config="true" signature="FacebookLogin()[pri:0, instance:jenkins.FacebookLogin@909217e]" started-at="2024-01-11T08:26:37Z" name="FacebookLogin" finished-at="2024-01-11T08:26:37Z" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="FacebookLogin()[pri:0, instance:jenkins.FacebookLogin@2cb4893b]" started-at="2024-01-11T10:25:53Z" name="FacebookLogin" finished-at="2024-01-11T10:25:53Z" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FacebookLogin -->
-        <test-method signature="loginpage()[pri:0, instance:jenkins.FacebookLogin@909217e]" started-at="2024-01-11T08:26:37Z" name="loginpage" finished-at="2024-01-11T08:26:42Z" duration-ms="5333" status="PASS">
+        <test-method is-config="true" signature="test()[pri:0, instance:jenkins.GoogleSeachPage@5e2c3d18]" started-at="2024-01-11T10:25:53Z" name="test" finished-at="2024-01-11T10:25:53Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="amazonlogin()[pri:0, instance:jenkins.login@7a35b0f5]" started-at="2024-01-11T10:25:53Z" name="amazonlogin" finished-at="2024-01-11T10:25:53Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazonlogin -->
+        <test-method signature="loginpage()[pri:0, instance:jenkins.FacebookLogin@2cb4893b]" started-at="2024-01-11T10:26:10Z" name="loginpage" finished-at="2024-01-11T10:26:17Z" duration-ms="6527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginpage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:jenkins.FacebookLogin@909217e]" started-at="2024-01-11T08:26:42Z" name="teardown" finished-at="2024-01-11T08:26:42Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:jenkins.FacebookLogin@2cb4893b]" started-at="2024-01-11T10:26:17Z" name="teardown" finished-at="2024-01-11T10:26:17Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:jenkins.GoogleSeachPage@5e2c3d18]" started-at="2024-01-11T10:26:17Z" name="teardown" finished-at="2024-01-11T10:26:17Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:jenkins.login@7a35b0f5]" started-at="2024-01-11T10:26:17Z" name="teardown" finished-at="2024-01-11T10:26:17Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- jenkins.FacebookLogin -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
