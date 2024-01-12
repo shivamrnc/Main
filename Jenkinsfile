@@ -18,14 +18,20 @@ pipeline {
             steps {
             bat 'mvn test -Dbrowser=localchrome'
                 publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
-                /*** workspace clean up*/
+    
+                
+                echo 'Deploying....'
+            }
+        }
+
+        stage('clean'){
+            steps{
+                            /*** workspace clean up*/
     post {
         always {
             cleanWs()
         }
     } 
-                
-                echo 'Deploying....'
             }
         }
       
