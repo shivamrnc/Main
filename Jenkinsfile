@@ -23,6 +23,12 @@ pipeline {
                 echo 'Deploying....'
             }
         }
+                    /*** workspace clean up*/
+    post {
+        always {
+            cleanWs()
+        }
+    } 
 
        
       
