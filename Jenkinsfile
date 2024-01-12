@@ -24,16 +24,7 @@ pipeline {
             }
         }
 
-        stage('clean'){
-            steps{
-                            /*** workspace clean up*/
-    post {
-        always {
-            cleanWs()
-        }
-    } 
-            }
-        }
+       
       
   
     }
